@@ -1,0 +1,24 @@
+<!--pages/login/login.wxml-->
+<form bindsubmit="formSubmit">
+  <view class='view-group'>
+    <image class='view-img' src='/images/liyangg.jpg'></image>
+  </view>
+  <view class='view-input'>
+    <input type='text' placeholder='用户名/号码' value="{{number}}" class='input' name='uname'></input>
+  </view>
+  <view class='view-input'>
+    <input password='true' placeholder='密码' value="{{passwd}}" class='input' name='passwd'></input>
+  </view>
+
+  <checkbox-group name="ckgroup" bindchange="checkboxChange">
+    <label class="checkbox">
+      <checkbox value="remember" name="ck-item" checked="false" />记住密码
+    </label>
+  </checkbox-group>
+
+  <view class='view-btn'>
+    <button type='primary' formType="submit" value='登陆'>登陆</button>
+  </view>
+</form>
+
+<navigator url="../register/register" class="link" hover-class="navigator-hover">没有账号?去注册</navigator>

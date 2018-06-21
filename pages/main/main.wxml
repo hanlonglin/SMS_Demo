@@ -1,0 +1,39 @@
+<!--pages/main/main.wxml-->
+<view class='view-top'>
+  <image src='/images/yuan.png' style="height:100rpx;width:100rpx;margin:20rpx;"> </image>
+  <view class='text'>{{user.name}}</view>
+</view>
+
+<view class='box'>
+  <view class='box-in'>
+    <view class='item' style='background-color:#B9D3EE'>
+      <image bindtap='gopage' data-page="partner" mode='widthFix' class='img' src='/images/partner.png'>
+      </image>
+      <view>我的伙伴</view>
+    </view>
+    <view bindtap='gopage' data-page="recommand" class='item' style='background-color:#FFC0CB'>
+      <image mode='widthFix' class='img' src='/images/recommand.png'>
+      </image>
+      <view>推荐消息</view>
+    </view>
+  </view>
+
+  <view class='box-in'>
+    <view class='item' style='background-color:#FFF68F'>
+      <image bindtap='gopage' data-page="message" mode='widthFix' class='img' src='/images/message.png'>
+      </image>
+      <view>消息</view>
+    </view>
+
+    <view class='item' style='background-color:#9AFF9A'>
+      <image bindtap='gopage' data-page="earth" mode='widthFix' class='img' src='/images/earth.png'>
+      </image>
+      <view>地图</view>
+    </view>
+  </view>
+</view>
+
+<view class='view-bottom'>
+  <image mode="widthFix" class='img-btm' src='/images/liyangg.jpg'></image>
+  <view style="font-size:28rpx;color:#1C86EE">你永远是我的小宝贝啊</view>
+</view>

@@ -1,0 +1,37 @@
+/* pages/login/login.wxss */
+page{
+  background-color: #DEDEDE;
+}
+.view-group{
+  margin: 20rpx;
+  text-align: center;
+}
+.view-img{
+  width: 200rpx;
+  height: 230rpx;
+  border-radius: 20rpx;
+}
+.view-input{
+  margin: 15rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.input{
+  padding: 10rpx;
+  margin: 10rpx;
+  border-radius: 10rpx;
+}
+.view-btn{
+  margin: 10rpx;
+}
+.checkbox{
+  margin: 20rpx;
+}
+
+.link{
+  color: #1C86EE;
+  font-size: 28rpx;
+  position: absolute;
+  right: 20rpx;
+  margin: 20rpx;
+}
