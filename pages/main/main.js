@@ -30,7 +30,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    app.getLocation();
   },
 
   /**
@@ -77,6 +77,21 @@ Page({
     {
       wx.navigateTo({
         url: '../partner/partner',
+      })
+    } else if (page =="message")
+    {
+      wx.navigateTo({
+        url: '../message/message',
+      })
+    }else if(page=="recommand")
+    {
+      wx.navigateTo({
+        url: '../recommand/recommand',
+      })
+    }
+    else if (page == "map") {
+      wx.navigateTo({
+        url: '../map/map',
       })
     }
   }

@@ -26,7 +26,7 @@
     </view>
 
     <view class='item' style='background-color:#9AFF9A'>
-      <image bindtap='gopage' data-page="earth" mode='widthFix' class='img' src='/images/earth.png'>
+      <image bindtap='gopage' data-page="map" mode='widthFix' class='img' src='/images/earth.png'>
       </image>
       <view>地图</view>
     </view>

@@ -4,14 +4,17 @@
     "pages/register/register",
     "pages/main/main",
     "pages/partner/partner",
+    "pages/message/message",
+    "pages/recommand/recommand",
+    "pages/recommandDetail/recommandDetail",
+    "pages/map/map",
     "pages/index/index",
     "pages/logs/logs"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "小宝贝",
     "navigationBarTextStyle": "black"
   }
 }

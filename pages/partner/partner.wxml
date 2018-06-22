@@ -1,2 +1,11 @@
 <!--pages/partner/partner.wxml-->
-<text>pages/partner/partner.wxml</text>
+<view style='text-align:center;font-size:45rpx;font-weight:bold;margin-bottom:20rpx;'>我的伙伴</view>
+<view class='view-group'>
+  <view class='view-item' style="background-color:{{colors[index%colors.length]}}"  wx:for="{{userList}}">
+    <image class="img" src='/images/yuan.png' style="height:80rpx;width:80rpx;"></image>
+    <view class='view-right'>
+      <view style="font-size:40rpx;font-weight:bold;color:#6495ED;">{{item.name}}</view>
+      <view style="font-size:28rpx;color:#919191;">{{item.number}}</view>
+    </view>
+  </view>
+</view>
