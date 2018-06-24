@@ -1,0 +1,38 @@
+/* pages/message/message.wxss */
+
+page {
+  background-color: #FFD700;
+}
+
+.view-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.view-item {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.view-right {
+  height: fit-content;
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  background: #fff;
+  border-style: solid;
+  border-width: 1rpx;
+  border-color: #c2c2c2;
+  border-radius: 15rpx;
+  padding: 10rpx;
+  font-size: 28rpx;
+}

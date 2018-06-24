@@ -8,6 +8,8 @@
     "pages/recommand/recommand",
     "pages/recommandDetail/recommandDetail",
     "pages/map/map",
+    "pages/mine/mine",
+    "pages/addrecommand/addrecommand",
     "pages/index/index",
     "pages/logs/logs"
   ],

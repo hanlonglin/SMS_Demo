@@ -1,11 +1,55 @@
 <!--pages/partner/partner.wxml-->
-<view style='text-align:center;font-size:45rpx;font-weight:bold;margin-bottom:20rpx;'>我的伙伴</view>
-<view class='view-group'>
-  <view class='view-item' style="background-color:{{colors[index%colors.length]}}"  wx:for="{{userList}}">
-    <image class="img" src='/images/yuan.png' style="height:80rpx;width:80rpx;"></image>
-    <view class='view-right'>
-      <view style="font-size:40rpx;font-weight:bold;color:#6495ED;">{{item.name}}</view>
-      <view style="font-size:28rpx;color:#919191;">{{item.number}}</view>
+<view wx:if="{{showPartner}}">
+  <view style='text-align:center;font-size:45rpx;font-weight:bold;margin-bottom:20rpx;'>我的伙伴</view>
+  <view class='view-group'>
+    <view class='view-item' style="background-color:{{colors[index%colors.length]}}" wx:for="{{userList}}" bindtap='choosePartner' data-index="{{index}}">
+      <image class="img" src='/images/yuan.png' style="height:80rpx;width:80rpx;"></image>
+      <view class='view-right'>
+        <view style="font-size:40rpx;font-weight:bold;color:#6495ED;">{{item.name}}</view>
+        <view style="font-size:28rpx;color:#919191;">{{item.number}}</view>
+      </view>
     </view>
   </view>
+</view>
+
+<!--推送消息-->
+<view animation="{{animationData}}" wx:if="{{showPush}}" style="background-color:#0000CD;position:fixed;bottom:0rpx;width:100%;height:fit-content;border-radius:5rpx;">
+  <view style='color:#fff;'>
+    <view style='font-size:40rpx;font-weight:bold;text-align:center;'>推送消息</view>
+    <view style="margin-top:50rpx;margin-left:20rpx;padding-bottom:10rpx;display:flex;flex-direction:row">
+      <view style="font-size:25rpx;">{{userList[chooseUserIndex].name}}</view>
+      <view style="margin-left:30rpx;font-size:25rpx">{{userList[chooseUserIndex].number}}</view>
+    </view>
+  </view>
+  <form bindsubmit='onSubmitPush'>
+    <view>
+      <input class="input" name="title" placeholder='标题'></input>
+      <textarea class="input" name="content" style="padding-top:15rpx;padding-bottom:15rpx;height:200rpx" placeholder='内容'></textarea>
+      <view style="display:flex;flex-direction:row;justify-content:center;flex-wrap:nowrap;">
+        <button type='detault' style="width:50%;background-color:#CCCCCC;color:#fff;font-size:30rpx;margin:20rpx;float:left" bindtap='cancelPush'>取消</button>
+        <button type='detault' style="width:50%;background-color:#1C86EE;color:#fff;font-size:30rpx;margin:20rpx;" form-type='submit'>推送</button>
+      </view>
+    </view>
+  </form>
+</view>
+
+
+<!--免费短信-->
+<view animation="{{animationData1}}" wx:if="{{showFreeSms}}" style="background-color:#0000CD;position:fixed;bottom:0rpx;width:100%;height:fit-content;border-radius:5rpx;">
+  <view style='color:#fff;'>
+    <view style='font-size:40rpx;font-weight:bold;text-align:center;'>免费短信</view>
+    <view style="margin-top:50rpx;margin-left:20rpx;padding-bottom:10rpx;display:flex;flex-direction:row">
+      <view style="font-size:25rpx;">{{userList[chooseUserIndex].name}}</view>
+      <view style="margin-left:30rpx;font-size:25rpx">{{userList[chooseUserIndex].number}}</view>
+    </view>
+  </view>
+  <form bindsubmit='onSubmitFreeSms'>
+    <view>
+      <textarea class="input" name="content" style="padding-top:15rpx;padding-bottom:15rpx;height:200rpx" placeholder='内容'></textarea>
+      <view style="display:flex;flex-direction:row;justify-content:center;flex-wrap:nowrap;">
+        <button type='detault' style="width:50%;background-color:#CCCCCC;color:#fff;font-size:30rpx;margin:20rpx;float:left" bindtap='cancelFreeSms'>取消</button>
+        <button type='detault' style="width:50%;background-color:#1C86EE;color:#fff;font-size:30rpx;margin:20rpx;" form-type='submit'>发送</button>
+      </view>
+    </view>
+  </form>
 </view>

@@ -1,7 +1,5 @@
-/* pages/partner/partner.wxss */
-page{
+/* pages/map/map.wxss */
 
-}
 .view-group{
     display: flex;
     flex-direction: column;
@@ -31,16 +29,25 @@ page{
 
 .view-right{
   margin-left:50rpx;
-  height:fit-content;
 }
 
-/*推送消息*/
-.input{
-  width:92%;
-  padding:10rpx;
-  font-size:30rpx;
-  margin:20rpx;
-  height:50rpx;
-  background: #EDEDED;
+
+.view-bottom {
+  position:fixed;
+  bottom: 30rpx;
+  left:30%;
+  text-align: center;
+  margin-top: 70rpx;
+  margin-bottom: 30rpx;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-btm {
+  width: 40rpx;
+  height: 30rox;
   border-radius: 10rpx;
 }

@@ -1,21 +1,25 @@
-// pages/main/main.js
-var app = getApp();
+// pages/recommandDetail/recommandDetail.js
+var app=getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    user: null,
+    server:"",
+    recommand: null,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log("name:" + app.globalData.muserInfo.name);
+    var recommand = JSON.parse(options.recommand);
+    var server = app.globalData.server;
+    console.log("recommand.image:"+recommand.imageurl+",server:"+server);
     this.setData({
-      user: app.globalData.muserInfo
+      recommand: recommand,
+      server:server,
     })
   },
 
@@ -30,7 +34,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    app.getLocation();
+
   },
 
   /**
@@ -66,34 +70,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  /*自定义 */
-
-  gopage: function (e) {
-    console.log(e);
-    var page = e.currentTarget.dataset.page;
-    if (page == "partner") {
-      wx.navigateTo({
-        url: '../partner/partner',
-      })
-    } else if (page == "message") {
-      wx.navigateTo({
-        url: '../message/message',
-      })
-    } else if (page == "recommand") {
-      wx.navigateTo({
-        url: '../recommand/recommand',
-      })
-    }
-    else if (page == "map") {
-      wx.navigateTo({
-        url: '../map/map',
-      })
-    } else if (page == "mine") {
-      wx.navigateTo({
-        url: '../mine/mine',
-      })
-    }
   }
 })

@@ -1,0 +1,13 @@
+/* pages/addrecommand/addrecommand.wxss */
+page{
+  background-color: #E6E6FA;
+}
+.input{
+  width:90%;
+  padding:10rpx;
+  font-size:30rpx;
+  margin:20rpx;
+  height:50rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}

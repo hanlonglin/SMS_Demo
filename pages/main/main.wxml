@@ -1,6 +1,6 @@
 <!--pages/main/main.wxml-->
 <view class='view-top'>
-  <image src='/images/yuan.png' style="height:100rpx;width:100rpx;margin:20rpx;"> </image>
+  <image src='/images/yuan.png' style="height:100rpx;width:100rpx;margin:20rpx;" bindtap='gopage' data-page="mine" > </image>
   <view class='text'>{{user.name}}</view>
 </view>
 

@@ -1,0 +1,72 @@
+/* pages/recommand/recommand.wxss */
+.img{
+  border-radius: 15rpx;
+  width:120rpx;
+  height:120rpx;
+}
+.view-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.view-item{
+  width:90%;
+  margin-left:5%;
+  margin-right: 5%;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.view-right{
+  height:fit-content;
+  margin-left: 30rpx;
+  margin-top:10rpx;
+  margin-bottom: 10rpx;
+  background: #fff;
+  padding:10rpx;
+}
+
+
+.view-bottom {
+  position:fixed;
+  bottom: 30rpx;
+  left:30%;
+  text-align: center;
+  margin-top: 70rpx;
+  margin-bottom: 30rpx;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-btm {
+  width: 40rpx;
+  height: 30rox;
+  border-radius: 10rpx;
+}
+
+.addimg{
+  width:70rpx;
+  height:70rpx;
+  position: fixed;
+  bottom:120rpx;
+  right:30rpx;
+}
+
+/*添加推荐布局*/
+.input{
+  width:90%;
+  padding:10rpx;
+  font-size:30rpx;
+  margin:20rpx;
+  height:50rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}

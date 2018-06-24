@@ -36,9 +36,15 @@
 			"current": -1,
 			"list": [
 				{
+					"id": 0,
+					"name": "mine",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				},
+				{
 					"id": -1,
-					"name": "main",
-					"pathName": "pages/main/main",
+					"name": "addrecommand",
+					"pathName": "pages/addrecommand/addrecommand",
 					"query": ""
 				}
 			]
